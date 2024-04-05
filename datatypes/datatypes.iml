@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/datatype-examples/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/datatypes-exercises/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/datatypes-studio/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
