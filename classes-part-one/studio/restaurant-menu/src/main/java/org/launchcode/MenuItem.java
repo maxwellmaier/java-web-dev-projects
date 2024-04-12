@@ -58,8 +58,20 @@ public class MenuItem {
 
     public boolean isNewItem() {
         Date today = new Date();
-        long thirtyDaysInMillis = 30L * 24 * 60 * 60 * 1000; // 30 days in milliseconds
+        long thirtyDaysInMillis = 30L * 24 * 60 * 60 * 1000;
         Date thirtyDaysAgo = new Date(today.getTime() - thirtyDaysInMillis);
         return lastUpdated.compareTo(thirtyDaysAgo) >= 0;
     }
+
+    @Override
+    public String toString() {
+        String details = "";
+        details += "Name: " + this.getName() + "\n";
+        details += "Description: " + this.getDescription() + "\n";
+        details += "Category: " + this.getCategory() + "\n";
+        details += "Price: " + this.getPrice() + "\n";
+        details += "Last Updated: " + this.getLastUpdated() + "\n";
+        return details;
+   }
+
 }
